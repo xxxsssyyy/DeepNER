@@ -1,8 +1,4 @@
-#!/usr/bin python3
 # -*- coding: utf-8 -*-
-# @Time    : 18-12-25 上午10:37
-# @Author  : 林利芳
-# @File    : modules.py
 
 from __future__ import print_function
 import tensorflow as tf
