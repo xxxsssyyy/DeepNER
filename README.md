@@ -19,7 +19,7 @@ This repository contains complex Deep Learning models for named entity recogniti
 ## TODO
 
 * Lexicon enhance
-* Label Attention Network for fine-gained
+* Label Attention Network for fine-gained NER
 * Nested NER
 
 ## References
