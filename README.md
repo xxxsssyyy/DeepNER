@@ -7,6 +7,16 @@ This repository contains complex Deep Learning models for named entity recogniti
 - [Tensorflow-gpu=1.14.0](https://github.com/tensorflow/tensorflow)
 - [jieba=0.37](https://github.com/fxsjy/jieba)
 
+## Train Models
+* Train Bilstm. with CRF
+```shell
+python test_BiLSTM_CRF.py
+```
+* fintuning bert with freezing bert Variables
+```shell
+python test_BiLSTM_CRF.py --freeze_bert True
+```
+
 ## Performances comparison
 | models | Precision | Recall | F1-Score |
 | :------| :------ | :------ | :------ |
