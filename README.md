@@ -8,7 +8,11 @@ This repository contains complex Deep Learning models for named entity recogniti
 - [jieba=0.37](https://github.com/fxsjy/jieba)
 
 ## Train Models
-* Train Bilstm. with CRF
+* Train Transformer with CRF
+```shell
+python test_Transformer_CRF.py --num_blocks 2
+```
+* Train Bilstm with CRF
 ```shell
 python test_BiLSTM_CRF.py
 ```
