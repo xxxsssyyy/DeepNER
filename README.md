@@ -24,7 +24,7 @@ python test_BiLSTM_CRF.py --freeze_bert True
 ```shell
 python test_BiLSTM_CRF.py --freeze_bert False
 ```
-## Performances comparison
+## Performances Comparison
 | models | Precision | Recall | F1-Score |
 | :------| :------ | :------ | :------ |
 | Transformer-CRF(2 Layers)  | 67.56% | 62.88% | 65.14% |
