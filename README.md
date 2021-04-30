@@ -26,7 +26,7 @@ python test_BiLSTM_CRF.py --freeze_bert True
 | :------| :------ | :------ | :------ |
 | Transformer-CRF  | 67.56% | 62.88% | 65.14% |
 | BiGRU-CRF | 91.66% | 89.85% | 90.75% |
-| BiLSTM-CRF |   |   |  |
+| BiLSTM-CRF | 91.90% | 89.85% | 90.87% |
 | Bert-BiLSTM-CRF(freeze) | 94.56% |  95.09% | 94.82%  |
 | Bert-BiLSTM-CRF(fintuning bert simultaneously) |  95.33% | 94.69% | 95.01% |
 
