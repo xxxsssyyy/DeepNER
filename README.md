@@ -20,7 +20,10 @@ python test_BiLSTM_CRF.py
 ```shell
 python test_BiLSTM_CRF.py --freeze_bert True
 ```
-
+* fintuning bert Variables simultaneously
+```shell
+python test_BiLSTM_CRF.py --freeze_bert False
+```
 ## Performances comparison
 | models | Precision | Recall | F1-Score |
 | :------| :------ | :------ | :------ |
