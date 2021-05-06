@@ -209,10 +209,10 @@ def multihead_attention(
         # Restore shape
         outputs = tf.concat(tf.split(outputs, num_heads, axis=0), axis=2)  # (N, T_q, C)
 
-        # Residual connection 残差
+        # Residual connection
         outputs += queries
 
-        # Normalize 层归一化
+        # Layer Normalization
         outputs = layer_normalize(outputs)  # (N, T_q, C)
 
     return outputs
