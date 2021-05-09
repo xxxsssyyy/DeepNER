@@ -205,4 +205,4 @@ class BertVector:
 if __name__ == "__main__":
     os.environ['CUDA_VISIBLE_DEVICES'] = '7'
     bc = BertVector(config)
-    embs = bc.encode(["微信搜索应用部。", "中国科学院自动化研究所。", "认识邢思远么", "今天天气不错，适合出行。", "今天是晴天，可以出去玩。"])
+    embs = bc.encode(["腾讯微信搜索应用部。", "中国科学院自动化研究所。", "这里可真不错", "今天天气不错，适合出行。", "今天是晴天，可以出去玩。"])
