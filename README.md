@@ -24,6 +24,15 @@ python test_BiLSTM_CRF.py --freeze_bert True
 ```shell
 python test_BiLSTM_CRF.py --freeze_bert False
 ```
+
+## Simply Use Bert Sentence Embeddings
+Please have a look at `predict_bert_sentence_emb.py`
+```Python 
+bc = BertVector(config)
+embs = bc.encode(["这个项目好用吗", "希望被多多点赞！", "修改配置请看config字典"])
+```
+
+
 ## Performances Comparison
 | models | Precision | Recall | F1-Score |
 | :------| :------ | :------ | :------ |
