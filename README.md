@@ -32,6 +32,12 @@ bc = BertVector(config)
 embs = bc.encode(["这个项目好用吗", "希望被多多点赞！", "修改配置请看config字典"])
 ```
 
+## Using Bert for text classification
+Please have a look at `tests/bert_classification.py`
+```Python 
+model = BertClassification(config)
+model.train()
+```
 
 ## Performances Comparison
 | models | Precision | Recall | F1-Score |
