@@ -263,13 +263,14 @@ class BertClassification(object):
                 while len(split_tokens) < self.max_seq_lens-1:
                     split_tokens.append('[PAD]')
                     input_masks.append(0)
-                input_masks.append(0)
+                
             # add CLS and SEP for tokens
             tokens = []
             tokens.append("[CLS]")
             for i_token in split_tokens:
                 tokens.append(i_token)
-            
+            # fix bug 20210701
+            input_masks = [1] + input_masks
             word_ids = token.convert_tokens_to_ids(tokens)
             word_segment_ids = [0] * len(word_ids)
 
